@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ==========================================================================
+       1. METADATOS Y SEO (Personaliza con tus datos)
+       ========================================================================== -->
+  <title>[TU NOMBRE] | Observability & SRE Portfolio</title>
+  <meta name="title" content="[TU NOMBRE] | Analista de Observabilidad & SRE">
+  <meta name="description" content="Portafolio profesional de [TU NOMBRE]. Especialista en Observabilidad, SRE, APM, Monitoreo de Infraestructura y Gestión de Incidentes Críticos.">
+  <meta name="keywords" content="Observabilidad, SRE, APM, Prometheus, Grafana, New Relic, Datadog, DevOps, Cloud, SysAdmin">
+  <meta name="author" content="[TU NOMBRE]">
+  <meta name="theme-color" content="#070B14">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[TU NOMBRE] | Observability & SRE Portfolio">
+  <meta property="og:description" content="Portafolio profesional enfocado en Observabilidad Full-Stack, Confiabilidad de Sistemas (SRE) y Operaciones de Misión Crítica.">
+  
+  <!-- Favicon (Puedes reemplazarlo por tu propio favicon o emoji) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       2. BARRA SUPERIOR DE TELEMETRÍA EN VIVO (STATUS BAR)
+       ========================================================================== -->
+  <div class="status-bar" id="statusBar">
+    <div class="container status-bar-container">
+      <div class="status-indicator-group">
+        <div class="status-pulse">
+          <span class="pulse-dot"></span>
+          <span>ALL CORE PLATFORMS OPERATIONAL</span>
+        </div>
+      </div>
+      <div class="status-metrics">
+        <div class="metric-chip">
+          <span class="chip-label">SLO UPTIME:</span>
+          <span class="chip-value healthy">99.99%</span>
+        </div>
+        <div class="metric-chip">
+          <span class="chip-label">P95 LATENCY:</span>
+          <span class="chip-value highlight">15.4 ms</span>
+        </div>
+        <div class="metric-chip">
+          <span class="chip-label">ACTIVE INCIDENTS:</span>
+          <span class="chip-value healthy">0 (STANDBY)</span>
+        </div>
+        <div class="metric-chip">
+          <span class="chip-label">LOCATION:</span>
+          <span class="chip-value">[TU CIUDAD, PAÍS]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo-group">
+        <div class="logo-badge">[IN]</div> <!-- Reemplaza por tus iniciales, ej: KT -->
+        <div class="logo-text">
+          <div class="logo-text-title">[TU NOMBRE] <span style="color:var(--telemetry-cyan)">.</span></div>
+          <div class="logo-text-subtitle">Observability & SRE</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#consola" class="nav-link">Consola Telemetría</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#certificaciones" class="nav-link">Certificaciones</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#educacion" class="nav-link">Educación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Reemplaza con tu enlace de WhatsApp o LinkedIn -->
+        <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <span>LinkedIn</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         4. HERO SECTION (Presentación de Alto Impacto)
+         ========================================================================== -->
+    <section class="section hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-intro-col">
+            <div class="hero-badge-row">
+              <div class="hero-role-pill">
+                <span>●</span> Operaciones Críticas & SRE
+              </div>
+              <div class="hero-cert-pill">
+                <span>⭐</span> [TU PRINCIPAL CERTIFICACIÓN]
+              </div>
+            </div>
+
+            <h1 class="hero-title">
+              [TU NOMBRE] <br>
+              <span class="highlight-text">[TU APELLIDO]</span>
+            </h1>
+
+            <p class="hero-tagline">
+              <strong>[Tu Especialidad / Cargo Actual]</strong> con más de [X] años de experiencia garantizando la alta disponibilidad, confiabilidad y rendimiento de sistemas en producción. Especialista en observabilidad full-stack, análisis APM, telemetría distribuida y reducción de MTTR.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#consola" class="btn btn-primary btn-lg">
+                <span>📊 Ver Consola de Telemetría</span>
+              </a>
+              <button class="btn btn-secondary btn-lg btn-copy-email" data-email="tu-email@ejemplo.com">
+                <span>📋 Copiar Correo</span>
+              </button>
+              <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan btn-lg">
+                <span>GitHub ↗</span>
+              </a>
+            </div>
+
+            <!-- Métricas de Impacto Cuantificables -->
+            <div class="hero-stats-row">
+              <div class="hero-stat-card">
+                <div class="stat-number cyan">+[X]</div>
+                <div class="stat-label">Años de Experiencia en TI / SRE</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-number green">99.9%</div>
+                <div class="stat-label">Cumplimiento de SLOs & Uptime</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-number indigo">24x7</div>
+                <div class="stat-label">Gestión de Incidentes Críticos</div>
+              </div>
+              <div class="hero-stat-card">
+                <div class="stat-number amber">-40%</div>
+                <div class="stat-label">Reducción de MTTR / Ruido</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Terminal Card -->
+          <div class="hero-visual-col">
+            <div class="hero-terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-controls">
+                  <span class="t-btn red"></span>
+                  <span class="t-btn yellow"></span>
+                  <span class="t-btn green"></span>
+                </div>
+                <div class="terminal-title">sre-node-01.local</div>
+                <div style="font-family:var(--font-mono); font-size:0.7rem; color:var(--telemetry-green)">● LIVE</div>
+              </div>
+              <div class="terminal-body">
+                <div class="log-line">
+                  <span class="log-time">[12:00:01]</span>
+                  <span class="log-tag info">[APM-INGEST]</span>
+                  <span class="log-msg">Tracing distributed spans across microservices cluster</span>
+                </div>
+                <div class="log-line">
+                  <span class="log-time">[12:00:02]</span>
+                  <span class="log-tag ok">[SYNTHETIC-CHECK]</span>
+                  <span class="log-msg">Synthetic Step Monitor passed (HTTP 200, 180ms)</span>
+                </div>
+                <div class="log-line">
+                  <span class="log-time">[12:00:03]</span>
+                  <span class="log-tag ok">[SLO-VALIDATION]</span>
+                  <span class="log-msg">Error budget healthy: 99.98% remaining</span>
+                </div>
+
+                <div class="terminal-telemetry-box">
+                  <div class="telemetry-row">
+                    <span class="telemetry-label">Production Availability</span>
+                    <span class="telemetry-val">99.99%</span>
+                  </div>
+                  <div class="telemetry-bar-container">
+                    <div class="telemetry-bar-fill green"></div>
+                  </div>
+
+                  <div class="telemetry-row" style="margin-top:0.65rem">
+                    <span class="telemetry-label">Synthetic Tests Coverage</span>
+                    <span class="telemetry-val">98.5%</span>
+                  </div>
+                  <div class="telemetry-bar-container">
+                    <div class="telemetry-bar-fill cyan"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CONSOLA INTERACTIVA DE OBSERVABILIDAD
+         ========================================================================== -->
+    <section class="section console-section" id="consola">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Interactive Showcase</div>
+          <h2 class="section-title">Consola Interactiva de Observabilidad & APM</h2>
+          <p class="section-subtitle">
+            Demostración visual e interactiva de métricas de rendimiento, monitoreo sintético y trazabilidad distribuida.
+          </p>
+        </div>
+
+        <div class="obs-console-wrapper">
+          <div class="console-nav-tabs">
+            <button class="console-tab-btn active" data-tab="metrics">
+              <span>📈</span> Telemetría en Vivo (APM)
+            </button>
+            <button class="console-tab-btn" data-tab="synthetics">
+              <span>🌐</span> Monitoreo Sintético
+            </button>
+            <button class="console-tab-btn" data-tab="traces">
+              <span>🔍</span> Distributed Tracing
+            </button>
+          </div>
+
+          <!-- TAB 1: Realtime Metrics -->
+          <div class="console-content-panel active" id="tab-metrics">
+            <div class="metrics-top-bar">
+              <div class="service-selector">
+                <label for="serviceSelect" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted)">Servicio:</label>
+                <select id="serviceSelect" class="custom-select">
+                  <option value="Production API Gateway">Production API Gateway</option>
+                  <option value="Authentication Microservice">Authentication Microservice</option>
+                  <option value="Database Cluster">Database Cluster</option>
+                </select>
+              </div>
+
+              <div class="time-window-selector">
+                <button class="time-btn">5m</button>
+                <button class="time-btn active">30m</button>
+                <button class="time-btn">1h</button>
+              </div>
+            </div>
+
+            <div class="metrics-cards-grid">
+              <div class="metric-kpi-card">
+                <div class="kpi-title">
+                  <span>THROUGHPUT (TPS)</span>
+                  <span style="color:var(--telemetry-cyan)">⚡ APM</span>
+                </div>
+                <div class="kpi-value" id="kpi-tps-val">1,850 tps</div>
+                <div class="kpi-status"><span>▲</span> Flujo Normal</div>
+              </div>
+
+              <div class="metric-kpi-card">
+                <div class="kpi-title">
+                  <span>LATENCIA P95</span>
+                  <span style="color:var(--telemetry-green)">⏱ SLA</span>
+                </div>
+                <div class="kpi-value" id="kpi-lat-val">16.2 ms</div>
+                <div class="kpi-status"><span>✓</span> Cumpliendo SLA (&lt; 50ms)</div>
+              </div>
+
+              <div class="metric-kpi-card">
+                <div class="kpi-title">
+                  <span>ERROR RATE (5XX)</span>
+                  <span style="color:var(--telemetry-green)">🛡️ SLO</span>
+                </div>
+                <div class="kpi-value">0.002%</div>
+                <div class="kpi-status"><span>✓</span> SLO Estable</div>
+              </div>
+
+              <div class="metric-kpi-card">
+                <div class="kpi-title">
+                  <span>CPU / MEMORY</span>
+                  <span style="color:var(--telemetry-indigo)">🖥️ INFRA</span>
+                </div>
+                <div class="kpi-value">32.4%</div>
+                <div class="kpi-status"><span>●</span> Balanceado</div>
+              </div>
+            </div>
+
+            <div class="chart-container-box">
+              <div class="chart-header">
+                <div class="chart-title">Transacciones en Tiempo Real (Throughput vs Latencia)</div>
+                <div class="chart-legend">
+                  <div class="legend-item">
+                    <span class="legend-color" style="background:#06B6D4"></span>
+                    <span>Throughput (TPS)</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-color" style="background:#10B981"></span>
+                    <span>Latencia (ms)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="canvas-wrapper">
+                <canvas id="telemetryChart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Synthetics -->
+          <div class="console-content-panel" id="tab-synthetics">
+            <div class="synthetics-list">
+              <div class="synthetic-item">
+                <div class="syn-name-col">
+                  <div class="syn-icon">🔒</div>
+                  <div>
+                    <div class="syn-title">Web Login & Authentication Flow</div>
+                    <div class="syn-url">Scripted Browser Monitor</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="syn-col-label">FRECUENCIA</div>
+                  <div class="syn-col-val">Cada 1 min</div>
+                </div>
+                <div>
+                  <div class="syn-col-label">LATENCIA</div>
+                  <div class="syn-col-val">240 ms</div>
+                </div>
+                <div>
+                  <div class="syn-col-label">STATUS</div>
+                  <div class="syn-col-val">200 OK</div>
+                </div>
+                <div><span class="badge-status-ok">● PASSED</span></div>
+              </div>
+
+              <div class="synthetic-item">
+                <div class="syn-name-col">
+                  <div class="syn-icon">⚡</div>
+                  <div>
+                    <div class="syn-title">Core API Endpoint Health Check</div>
+                    <div class="syn-url">HTTP Synthetic Monitor</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="syn-col-label">FRECUENCIA</div>
+                  <div class="syn-col-val">Cada 30 seg</div>
+                </div>
+                <div>
+                  <div class="syn-col-label">LATENCIA</div>
+                  <div class="syn-col-val">45 ms</div>
+                </div>
+                <div>
+                  <div class="syn-col-label">STATUS</div>
+                  <div class="syn-col-val">200 OK</div>
+                </div>
+                <div><span class="badge-status-ok">● PASSED</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Traces -->
+          <div class="console-content-panel" id="tab-traces">
+            <div class="traces-wrapper">
+              <div class="trace-summary-header">
+                <div><strong>Trace ID:</strong> <code>tr-8f4b29c018a</code></div>
+                <div><strong>Operación:</strong> <code>POST /api/v1/checkout</code></div>
+                <div><strong>Duración Total:</strong> <span style="color:var(--telemetry-green)">34.2 ms</span></div>
+              </div>
+
+              <div class="trace-span-row">
+                <div class="trace-span-name">
+                  <span class="span-dot" style="background:#06B6D4"></span>
+                  <span>1. API Gateway Ingress</span>
+                </div>
+                <div class="waterfall-track">
+                  <div class="waterfall-bar" style="left:0%; width:20%; background:#06B6D4"></div>
+                </div>
+                <div class="trace-duration">3.8 ms</div>
+              </div>
+
+              <div class="trace-span-row">
+                <div class="trace-span-name" style="padding-left:1rem">
+                  <span class="span-dot" style="background:#6366F1"></span>
+                  <span>2. Authentication Service</span>
+                </div>
+                <div class="waterfall-track">
+                  <div class="waterfall-bar" style="left:15%; width:25%; background:#6366F1"></div>
+                </div>
+                <div class="trace-duration">5.4 ms</div>
+              </div>
+
+              <div class="trace-span-row">
+                <div class="trace-span-name" style="padding-left:2rem">
+                  <span class="span-dot" style="background:#10B981"></span>
+                  <span>3. Database Query (SQL)</span>
+                </div>
+                <div class="waterfall-track">
+                  <div class="waterfall-bar" style="left:38%; width:40%; background:#10B981"></div>
+                </div>
+                <div class="trace-duration">12.1 ms</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. TIMELINE DE EXPERIENCIA LABORAL
+         ========================================================================== -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Trayectoria Profesional</div>
+          <h2 class="section-title">Experiencia Laboral</h2>
+          <p class="section-subtitle">
+            Roles, responsabilidades y logros cuantificables en entornos de producción.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experiencia 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node active"></div>
+            <div class="timeline-card">
+              <div class="timeline-header-meta">
+                <div class="company-title-group">
+                  <h3 class="job-role">[TU CARGO ACTUAL]</h3>
+                  <div class="company-name">[Nombre de la Empresa]</div>
+                </div>
+                <div class="duration-badge">[Año de Inicio] — Presente</div>
+              </div>
+
+              <p class="job-scope-desc">
+                Descripción breve del alcance de tu rol, equipo y sistemas sobre los que tienes responsabilidad.
+              </p>
+
+              <div class="duty-list">
+                <div class="duty-item">
+                  <span class="duty-icon">▹</span>
+                  <span>Implementación y mantenimiento de dashboards en tiempo real con alertas proactivas.</span>
+                </div>
+                <div class="duty-item">
+                  <span class="duty-icon">▹</span>
+                  <span>Gestión y mitigación de incidentes críticos P1/P2 en coordinación con equipos de ingeniería.</span>
+                </div>
+                <div class="duty-item">
+                  <span class="duty-icon">▹</span>
+                  <span>Análisis de telemetría y trazabilidad distribuida para optimizar tiempos de respuesta.</span>
+                </div>
+              </div>
+
+              <div class="achievements-box">
+                <div class="achievements-title">⭐ Logros Clave:</div>
+                <div class="achieve-item">✓ [Logro cuantificable 1, ej: Reducción del 30% en falsas alarmas del NOC]</div>
+                <div class="achieve-item">✓ [Logro cuantificable 2, ej: Cobertura del 95% en monitoreo sintético]</div>
+              </div>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag">New Relic / Datadog</span>
+                <span class="tech-tag">Prometheus & Grafana</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Incident Management</span>
+                <span class="tech-tag">SRE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experiencia 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="timeline-header-meta">
+                <div class="company-title-group">
+                  <h3 class="job-role">[TU CARGO ANTERIOR]</h3>
+                  <div class="company-name">[Empresa Anterior]</div>
+                </div>
+                <div class="duration-badge">[Año] — [Año]</div>
+              </div>
+
+              <p class="job-scope-desc">
+                Descripción de tus responsabilidades de soporte, monitoreo u operaciones en esta posición.
+              </p>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag">NOC 24x7</span>
+                <span class="tech-tag">Cloud & On-Premise</span>
+                <span class="tech-tag">Alerting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. HUB DE CERTIFICACIONES
+         ========================================================================== -->
+    <section class="section certs-section" id="certificaciones">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Validación Técnica</div>
+          <h2 class="section-title">Certificaciones Oficiales</h2>
+          <p class="section-subtitle">
+            Insignias y credenciales verificadas en Observabilidad, SRE, Cloud y Seguridad.
+          </p>
+        </div>
+
+        <div class="certs-filter-bar">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="obs">Observabilidad & SRE</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+          <button class="filter-btn" data-filter="sec">Seguridad & FinOps</button>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card verified-highlight" data-category="obs">
+            <div class="cert-card-top">
+              <div class="cert-issuer-icon">📊</div>
+              <div class="cert-info-main">
+                <div class="cert-issuer-name">[Institución Emisora]</div>
+                <h3 class="cert-name">[Nombre de la Certificación]</h3>
+              </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:1rem">
+              Descripción de las competencias y habilidades validadas por este examen.
+            </p>
+            <div class="cert-meta-row">
+              <span>[Mes Año]</span>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                Verificar Credencial ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card" data-category="cloud">
+            <div class="cert-card-top">
+              <div class="cert-issuer-icon">☁️</div>
+              <div class="cert-info-main">
+                <div class="cert-issuer-name">[AWS / Azure / GCP]</div>
+                <h3 class="cert-name">[Certificación Cloud]</h3>
+              </div>
+            </div>
+            <p style="font-size:0.84rem; color:var(--text-muted); margin-bottom:1rem">
+              Fundamentos de infraestructura, cómputo, redes y gobernanza en la nube.
+            </p>
+            <div class="cert-meta-row">
+              <span>[Mes Año]</span>
+              <span style="color:var(--telemetry-green); font-weight:600">✓ Verificada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. MATRIZ DE HABILIDADES
+         ========================================================================== -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Matriz Técnica</div>
+          <h2 class="section-title">Habilidades & Dominios</h2>
+          <p class="section-subtitle">
+            Herramientas y tecnologías aplicadas en producción.
+          </p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">📊</div>
+              <h3 class="domain-title">Observabilidad & APM</h3>
+            </div>
+            <div class="domain-pills-list">
+              <span class="skill-pill mastered">New Relic</span>
+              <span class="skill-pill mastered">Prometheus & Grafana</span>
+              <span class="skill-pill">Datadog</span>
+              <span class="skill-pill">OpenTelemetry</span>
+              <span class="skill-pill">Synthetic Monitoring</span>
+            </div>
+          </div>
+
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">🚨</div>
+              <h3 class="domain-title">Incident Command & SRE</h3>
+            </div>
+            <div class="domain-pills-list">
+              <span class="skill-pill mastered">War Rooms 24x7</span>
+              <span class="skill-pill mastered">SLI / SLO / Error Budgets</span>
+              <span class="skill-pill">Root Cause Analysis (RCA)</span>
+              <span class="skill-pill">Disaster Recovery (DRP)</span>
+            </div>
+          </div>
+
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">⚙️</div>
+              <h3 class="domain-title">Infraestructura & Cloud</h3>
+            </div>
+            <div class="domain-pills-list">
+              <span class="skill-pill mastered">Linux (Ubuntu/RHEL)</span>
+              <span class="skill-pill">AWS / Azure</span>
+              <span class="skill-pill">Docker & Kubernetes</span>
+              <span class="skill-pill">Bash Scripting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. EDUCACIÓN
+         ========================================================================== -->
+    <section class="section education-section" id="educacion">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Formación</div>
+          <h2 class="section-title">Educación Académica</h2>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="edu-badge-row">
+              <span class="edu-year">[2020 — 2024]</span>
+              <span style="color:var(--telemetry-green); font-family:var(--font-mono); font-size:0.75rem; font-weight:600">✓ Graduado</span>
+            </div>
+            <h3 class="edu-degree">[Tu Carrera / Grado Universitario]</h3>
+            <div class="edu-institution">[Nombre de la Universidad]</div>
+            <p class="edu-desc">
+              Formación académica orientada a ingeniería, sistemas y desarrollo de software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACTO Y FOOTER
+         ========================================================================== -->
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-card-box">
+          <div class="section-tag" style="margin-bottom:1.25rem">Contacto</div>
+          <h2 class="contact-card-title">¿Interesado en colaborar o conectar?</h2>
+          <p class="contact-card-desc">
+            Disponible para oportunidades en Observabilidad, SRE, Monitoreo TI o DevOps.
+          </p>
+
+          <div class="contact-channels-grid">
+            <div class="contact-channel-item">
+              <div class="channel-icon">✉️</div>
+              <div class="channel-label">CORREO ELECTRÓNICO</div>
+              <div class="channel-val">tu-email@ejemplo.com</div>
+              <button class="btn btn-secondary btn-sm btn-copy-email" data-email="tu-email@ejemplo.com" style="margin-top:0.4rem">
+                <span>Copiar Correo</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">💼</div>
+              <div class="channel-label">LINKEDIN</div>
+              <div class="channel-val">[Tu Nombre en LinkedIn]</div>
+              <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="margin-top:0.4rem">
+                <span>Conectar ↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 [TU NOMBRE] — SRE & Observability Portfolio Template.
+          </div>
+          <div class="footer-social-links">
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="footer-social-btn">GitHub</a>
+            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="footer-social-btn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
