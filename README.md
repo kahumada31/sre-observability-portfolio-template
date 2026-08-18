@@ -1,5 +1,5 @@
 # 📊 SRE & Observability Portfolio Template
-> A modern, high-tech, dark-themed developer and SRE portfolio template tailored for **Site Reliability Engineers, Observability Analysts, DevOps Engineers, and Cloud Infrastructure Specialists**.
+> A modern, high-tech, dark-themed developer and SRE portfolio template tailored for **Site Reliability Engineers, IT Monitoring Analyst, Observability Analysts, DevOps Engineers, and Cloud Infrastructure Specialists**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-success.svg)](https://pages.github.com/)
@@ -43,7 +43,7 @@ git clone https://github.com/tu-usuario/tu-usuario.github.io.git
 cd tu-usuario.github.io
 ```
 
-Open `index.html` in your favorite editor (VS Code, Sublime, etc.) and replace the placeholder fields:
+Open `index.html` in your favorite editor (VS Code, Sublime, Antigravity IDE, etc.) and replace the placeholder fields:
 - `[TU NOMBRE]` ➔ Your Full Name
 - `[Tu Especialidad / Cargo]` ➔ Your Job Title
 - `tu-email@ejemplo.com` ➔ Your Contact Email
